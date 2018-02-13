@@ -1,0 +1,216 @@
+%% 
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times,authoryear]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,3p,times,authoryear]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,authoryear]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+\journal{Energy and Buildings}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Heating of staircases in high-rise buildings}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \address[label1]{}
+%% \address[label2]{}
+
+\author{Dmitry Ivanov\corref{cor1}}
+\ead{ivanov@engex.com}
+
+\author{Olga Yakimchuk\corref{cor2}}
+\author{Ivan Pastukhov\corref{cor2}}
+
+
+\cortext[cor1]{Corresponding author}
+
+\address {ENGEX, adress Moscow}
+
+
+\begin{abstract}
+%% Text of abstract
+Text of abstract (200 words max)
+\end{abstract}
+
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+staircase \sep heating \sep CFD \sep max10words
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% Do not foreget to add highlights in a separate file
+%•	Current recommendations sux
+%•	Infiltration is fucking important
+%•	Infiltration is highly variable and only statistics helps
+%•	We created CFD models, which are consistent with experiments
+%•	We proposed engineering calculation methodology
+
+%% \linenumbers
+
+%% main text
+
+\section{Introduction}
+%see autorpath reccommendattion on introduction and other sections! 
+
+%What is your study area and what is already known about the main topic?
+%What is the overall knowledge gap or problem statement? (What has been done in the past about that problem, and what are the limitations or remaining problems?)
+%What specific question/problem did you study (and why)?
+%What was your overall approach (and why)?
+%In some disciplines/journals: What are the main conclusion and implications?
+%In some disciplines/journals: How will your paper be presented (its sections or main arguments)?
+
+Due to the lack of space in the urban area, the construction of high-rise buildings has become a world trend in construction. Residential and public buildings of 25 or more storeys are the norm at the moment, which, taking into account the volumes of development, requires the development of general recommendations for similar facilities. Based on the statistics on the site of the "Single Register of Developers" (1), Moscow ranks first in the Russian Federation among the 85 regions in terms of the share of high-rise construction, where it is 22.5\% and 13.2\% in Russia as a whole. The largest proportion of houses being built in Moscow is for houses with a height of 18-24 floors.
+
+The issues of zoning of systems and selection of equipment and fittings designed for high-rise construction are the most actively discussed issues of heating high-rise buildings. Placement of heating appliances in residential and public buildings of high-rise buildings has no special features, which can not be said for staircases. The heated volume of staircases directly depends on the number of storeys of the building. From the arrangement of heating devices on staircases, capital costs for construction, the appearance of staircases, the presence of overheating / overcooling of staircase sections and, therefore, the operating costs of heating depend.
+In clause 6.4.5 of SP 60.13330.2012 "Heating, ventilation and air conditioning" (2) it is stated: "Heating devices on staircases should, as a rule, be placed on the first floor, and on staircases, divided into compartments, at the bottom parts of each compartment. "There are no other recommendations in the regulatory documentation.
+It turns out that the issue of arranging heating appliances in staircases of high-rise buildings is not simple and does not have a clear answer. Typically, engineers rely on a previous experience, which varies greatly from person to person, leading often to completely different solutions.
+Analysis of the literature showed the lack of data on the distribution of temperature on the floors inside the stairs, as well as recommendations on the frequency of installation of devices. The present study was conducted to fill the gap. This article presents the results of a study of heating staircases in high-rise buildings in order to develop recommendations for their heating.
+
+\section{Methodology}
+\subsection{General approach}
+To achieve the above goal, it is necessary to collect data from a large number of staircases, wherever the number of storeys, the proportion of glazing and other parameters, and the arrangement of instruments vary. Conducting field experiments in this case is limited to available types of buildings, engineering solutions and weather conditions at the time of the measurement, which differ from the calculated ones. Numerical experiments using computational hydrodynamics based on calibrated on-field experiments allow to conduct a sufficient number of tests to develop recommendations for heating stairs. In addition, this approach makes it possible to investigate the factors that influence the result. After carrying out multivariate calculations, the obtained data are processed to determine the dependencies by means of regression analysis, which will allow to obtain the engineering method for determining the optimal variant of power distribution of the heating system.
+
+\subsection{Numerical simulation}
+Numerical experiments were performed using mathematical modeling of hydrodynamic processes, called CFD (Computational Fluid Dynamics). As a result of this approach, it is possible to obtain a distribution of microclimate parameters in the volume under study
+
+\subsubsection{Mathematical description}
+For modeling, the software complex ANSYS CFX was used, which realizes the numerical solution of the heat and mass transfer equations by the finite volume method.
+
+To take into account the gravity, a term is added to the momentum equation, forcing less dense air (relative to the average density $ρ_ref$) to rise upward:
+
+For this study, several models were tested, as a result of which the standard kε configuration proved to be well established. Radiative heat exchange is taken into account by the Discrete Transfer Model, which involves isotropic scattering, that is, uniform in all directions - in this case it is justified in view of the absence of a separate radiation direction.
+
+\subsubsection{Volume discretization}
+The accuracy, time and, as a consequence, the reliability of the results of calculations depend on the number of elements, the form and the regularity of the grid. For a more accurate heat transfer and flow resolution near the walls, windows and convectors, prismatic elements are used, which makes it possible to make the first step of the grid small near the wall small. In the remaining volume, a tetrahedral grid is built, condensed around objects with smaller linear dimensions. After analysing the grid convergence, it was decided to stop on an option whose vertical section is shown in Fig.\ref{fig:cfd_grid}.
+
+
+\begin{figure}
+\centering
+
+\includegraphics[width=90mm]{cfd_grid.jpg}
+\caption{CFD Grid}\label{fig:cfd_grid}
+
+\end{figure}
+
+%картинка не проходит по требованию четкости. см инструкции к изображениям
+%https://www.elsevier.com/authors/author-schemas/artwork-and-media-instructions
+
+
+\section{Results and discussions}
+Here we will add results! This like is to test Git.
+
+\section{Conclusions}
+
+\section*{Acknowledgements}
+
+\section*{References}
+
+\section*{Example of LaTeX usage}
+
+Here goes the text.
+
+We go to the next line with an empty line.
+Hey! this looks like math: $x+y=1$
+$$x+y=1$$
+
+This is how we make references \cite{testref}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% If you have bibdatabase file and want bibtex to generate the
+%% bibitems, please use
+%%
+%%  \bibliographystyle{elsarticle-num} 
+%%  \bibliography{<your bibdatabase>}
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+
+\begin{thebibliography}{00}
+
+%% \bibitem{label}
+%% Text of bibliographic item
+
+\bibitem{testref}
+fist reference
+
+\end{thebibliography}
+\end{document}
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.
